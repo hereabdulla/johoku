@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include johoku *.css
+recursive-include johoku *.csv
+recursive-include johoku *.html
+recursive-include johoku *.ico
+recursive-include johoku *.js
+recursive-include johoku *.json
+recursive-include johoku *.md
+recursive-include johoku *.png
+recursive-include johoku *.py
+recursive-include johoku *.svg
+recursive-include johoku *.txt
+recursive-exclude johoku *.pyc
