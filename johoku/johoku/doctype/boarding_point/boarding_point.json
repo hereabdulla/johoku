@@ -1,0 +1,49 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-08-18 14:49:50.481412",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "boarding_point",
+  "route_no"
+ ],
+ "fields": [
+  {
+   "fieldname": "boarding_point",
+   "fieldtype": "Data",
+   "label": "Boarding Point"
+  },
+  {
+   "fieldname": "route_no",
+   "fieldtype": "Link",
+   "label": "Route No",
+   "options": "Route No"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-08-18 14:58:22.196762",
+ "modified_by": "Administrator",
+ "module": "Johoku",
+ "name": "Boarding Point",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
