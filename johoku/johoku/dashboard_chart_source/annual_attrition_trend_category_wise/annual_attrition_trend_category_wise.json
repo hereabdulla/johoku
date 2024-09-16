@@ -1,0 +1,13 @@
+{
+ "creation": "2022-11-19 10:07:52.775349",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart Source",
+ "idx": 0,
+ "modified": "2022-11-19 10:07:52.775349",
+ "modified_by": "Administrator",
+ "module": "Johoku",
+ "name": "Annual Attrition Trend Category wise",
+ "owner": "Administrator",
+ "source_name": "Annual Attrition Trend Category wise",
+ "timeseries": 1
+}

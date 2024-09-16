@@ -1,0 +1,8 @@
+
+def validate(self):
+in_time=datetime.strptime(self.in_time,"%y-%m-%d %h:%m")
+        out_time=datetime.strptime(self.out_time,"%y-%m-%d %h:%m")
+        working_hour=in_time-out_time
+        ftr = [3600,60,1]
+        hr = sum([a*b for a,b in zip(ftr, map(int,str(total_working_hour).split(':')))])
+        wh = round(hr/3600,1)

@@ -6,29 +6,22 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "employee_id",
+  "employee",
   "employee_name",
   "department",
   "designation"
  ],
  "fields": [
   {
-   "fieldname": "employee_id",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "label": "Employee ID",
-   "options": "Employee",
-   "reqd": 1
-  },
-  {
-   "fetch_from": "employee_id.employee_name",
+   "fetch_from": "employee.first_name",
    "fieldname": "employee_name",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Employee Name"
+   "label": "Employee Name",
+   "read_only": 1
   },
   {
-   "fetch_from": "employee_id.department",
+   "fetch_from": "employee.department",
    "fieldname": "department",
    "fieldtype": "Link",
    "in_list_view": 1,
@@ -37,17 +30,26 @@
    "read_only": 1
   },
   {
-   "fetch_from": "employee_id.designation",
+   "fetch_from": "employee.designation",
    "fieldname": "designation",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Designation",
-   "options": "Designation"
+   "options": "Designation",
+   "read_only": 1
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Employee ID",
+   "options": "Employee"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2022-08-16 12:20:55.688200",
+ "modified": "2023-06-28 12:01:38.745059",
  "modified_by": "Administrator",
  "module": "Johoku",
  "name": "Multi Employee",

@@ -1,0 +1,29 @@
+{
+ "cards": [],
+ "charts": [
+  {
+   "chart": "Attendance Count",
+   "width": "Half"
+  },
+  {
+   "chart": "Department wise Timesheet Hours",
+   "width": "Half"
+  },
+  {
+   "chart": "Test V2",
+   "width": "Half"
+  }
+ ],
+ "creation": "2022-12-05 16:41:17.930874",
+ "dashboard_name": "Test",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2022-12-05 18:41:20.160849",
+ "modified_by": "Administrator",
+ "module": "Johoku",
+ "name": "Test",
+ "owner": "Administrator"
+}

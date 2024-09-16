@@ -1,0 +1,21 @@
+{
+ "cards": [],
+ "charts": [
+  {
+   "chart": "Attendance",
+   "width": "Full"
+  }
+ ],
+ "creation": "2023-01-31 14:57:35.876657",
+ "dashboard_name": "Att",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 1,
+ "is_standard": 1,
+ "modified": "2023-01-31 14:57:35.876657",
+ "modified_by": "Administrator",
+ "module": "Johoku",
+ "name": "Att",
+ "owner": "Administrator"
+}

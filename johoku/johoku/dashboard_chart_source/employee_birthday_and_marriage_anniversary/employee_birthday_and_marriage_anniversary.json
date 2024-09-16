@@ -1,0 +1,14 @@
+{
+ "creation": "2023-06-27 15:43:39.975969",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart Source",
+ "idx": 0,
+ "modified": "2023-06-27 16:03:57.537825",
+ "modified_by": "Administrator",
+ "module": "Johoku",
+ "color": "#1037e3",
+ "name": "Employee Birthday and Marriage Anniversary",
+ "owner": "Administrator",
+ "source_name": "Employee Birthday and Marriage Anniversary",
+ "timeseries": 1
+}

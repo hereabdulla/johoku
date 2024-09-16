@@ -1,0 +1,55 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2023-01-25 13:38:09.086476",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "salary_componentcurrent_salary",
+  "amountcs",
+  "salary_componentexpected_salary",
+  "amountes"
+ ],
+ "fields": [
+  {
+   "fieldname": "salary_componentcurrent_salary",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Salary Component(Current Salary)",
+   "options": "Salary Component"
+  },
+  {
+   "fieldname": "amountcs",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Amount(CS)"
+  },
+  {
+   "fieldname": "salary_componentexpected_salary",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Salary Component(Expected Salary)",
+   "options": "Salary Component"
+  },
+  {
+   "fieldname": "amountes",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Amount(ES)"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-02-03 16:35:47.331002",
+ "modified_by": "Administrator",
+ "module": "Johoku",
+ "name": "Present  and Excepted Salary Table",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,68 @@
+{
+ "actions": [],
+ "autoname": "UREC.#####",
+ "creation": "2023-05-10 22:59:37.040372",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "biometric_pin",
+  "biometric_time",
+  "column_break_3",
+  "locationdevice_id",
+  "log_type"
+ ],
+ "fields": [
+  {
+   "fieldname": "biometric_pin",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Biometric PIN"
+  },
+  {
+   "fieldname": "biometric_time",
+   "fieldtype": "Datetime",
+   "label": "Biometric Time"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "locationdevice_id",
+   "fieldtype": "Data",
+   "label": "Location/Device ID"
+  },
+  {
+   "fieldname": "log_type",
+   "fieldtype": "Data",
+   "label": "Log Type"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-07-21 07:36:51.360068",
+ "modified_by": "Administrator",
+ "module": "Johoku",
+ "name": "Unregistered Employee Checkin",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

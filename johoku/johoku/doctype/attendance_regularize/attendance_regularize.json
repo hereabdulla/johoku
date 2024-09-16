@@ -1,0 +1,218 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "ARN.####",
+ "creation": "2023-02-13 17:42:34.262016",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "employee_name",
+  "date_of_joining",
+  "jo_exp",
+  "designation",
+  "grade",
+  "column_break_2",
+  "attendance_date",
+  "department",
+  "category",
+  "workstation",
+  "attendance_details_section",
+  "assigned_shift",
+  "shift_in_time",
+  "shift_out_time",
+  "column_break_8",
+  "first_in_time",
+  "last_out_time",
+  "column_break_11",
+  "corrected_in",
+  "corrected_out",
+  "corrected_shift",
+  "section_break_15",
+  "attendance_marked",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Employee",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.employee",
+   "fieldname": "attendance_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Attendance Date",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.employee",
+   "fieldname": "attendance_details_section",
+   "fieldtype": "Section Break",
+   "label": "Attendance Details"
+  },
+  {
+   "fieldname": "assigned_shift",
+   "fieldtype": "Data",
+   "label": "Assigned Shift"
+  },
+  {
+   "fieldname": "shift_in_time",
+   "fieldtype": "Data",
+   "label": "Shift In Time"
+  },
+  {
+   "fieldname": "shift_out_time",
+   "fieldtype": "Data",
+   "label": "Shift Out Time"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "first_in_time",
+   "fieldtype": "Data",
+   "label": "First In Time"
+  },
+  {
+   "fieldname": "last_out_time",
+   "fieldtype": "Data",
+   "label": "Last Out Time"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "corrected_in",
+   "fieldtype": "Datetime",
+   "label": "Corrected In"
+  },
+  {
+   "fieldname": "corrected_out",
+   "fieldtype": "Data",
+   "label": "Corrected Out"
+  },
+  {
+   "fieldname": "corrected_shift",
+   "fieldtype": "Link",
+   "label": "Corrected Shift",
+   "options": "Shift Type"
+  },
+  {
+   "depends_on": "eval:doc.employee",
+   "fieldname": "section_break_15",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "attendance_marked",
+   "fieldtype": "Link",
+   "label": "Attendance Marked",
+   "options": "Attendance"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "options": "Attendance Regularize"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "options": "Attendance Regularize"
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.designation",
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "label": "Designation",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.grade",
+   "fieldname": "grade",
+   "fieldtype": "Data",
+   "label": "Grade",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.department",
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.employee_category",
+   "fieldname": "category",
+   "fieldtype": "Data",
+   "label": "Category",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.work_station",
+   "fieldname": "workstation",
+   "fieldtype": "Data",
+   "label": "Workstation",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.date_of_joining",
+   "fieldname": "date_of_joining",
+   "fieldtype": "Date",
+   "label": "Date of Joining"
+  },
+  {
+   "fieldname": "jo_exp",
+   "fieldtype": "Data",
+   "label": "Jo Exp"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-03-14 10:29:22.902434",
+ "modified_by": "Administrator",
+ "module": "Johoku",
+ "name": "Attendance Regularize",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

@@ -1,0 +1,14 @@
+{
+ "creation": "2023-06-20 13:10:14.003105",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart Source",
+ "idx": 0,
+ "modified": "2023-06-27 16:04:42.158031",
+ "modified_by": "Administrator",
+ "module": "Johoku",
+ "name": "Employee Birthday",
+ "owner": "Administrator",
+ "source_name": "Employee Birthday",
+ "color": "#1037e3",
+ "timeseries": 1
+}

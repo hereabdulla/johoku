@@ -1,0 +1,73 @@
+{
+ "cards": [],
+ "charts": [
+  {
+   "chart": "Hiring vs Attrition Count",
+   "width": "Full"
+  },
+  {
+   "chart": "Daily Absenteeism Chart Department wise",
+   "width": "Full"
+  },
+  {
+   "chart": "Daily Absenteeism Chart Category wise",
+   "width": "Full"
+  },
+  {
+   "chart": "Monthly Absenteeism Percentage Chart against Dapartment",
+   "width": "Full"
+  },
+  {
+   "chart": "Monthly Absenteeism Percentage Chart against Category",
+   "width": "Full"
+  },
+  {
+   "chart": "Overall Absenteeism Percentage Chart in Monthwise",
+   "width": "Full"
+  },
+  {
+   "chart": "Annual Attrition Chart against Department",
+   "width": "Full"
+  },
+  {
+   "chart": "Annual Attrition Chart against Category",
+   "width": "Full"
+  },
+  {
+   "chart": "Annual Addition Trend Department wise",
+   "width": "Full"
+  },
+  {
+   "chart": "Annual Addition Trend Category wise",
+   "width": "Full"
+  },
+  {
+   "chart": "Covid 19 Vaccination Chart",
+   "width": "Full"
+  },
+  {
+   "chart": "Covid 19 Dose 1 Vaccination Chart Against Annually",
+   "width": "Full"
+  },
+  {
+   "chart": "Covid 19 Dose  2 Vaccination Chart Against Annually",
+   "width": "Full"
+  },
+  {
+   "chart": "Employee Birthday and Marriage Anniversary",
+   "width": "Full"
+  }
+ ],
+ "creation": "2022-10-20 11:45:34.303167",
+ "dashboard_name": "Johoku",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2023-06-27 16:07:36.011912",
+ "modified_by": "Administrator",
+ "module": "Johoku",
+ "name": "Johoku",
+ "owner": "Administrator"
+}

@@ -1,0 +1,34 @@
+{
+ "chart_name": "Employee Addition",
+ "chart_type": "Report",
+ "creation": "2022-10-21 19:53:41.298265",
+ "custom_options": "{\"x_field\": \"department\", \"chart_type\": \"Bar\", \"y_axis_fields\": [{\"idx\": 1, \"__islocal\": true, \"name\": \"row 1\", \"y_field\": \"status\", \"color\": \"#CB2929\"}], \"y_fields\": [\"status\"], \"colors\": [\"#CB2929\"]}",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart",
+ "dynamic_filters_json": "",
+ "filters_json": "{\"month\":\"1\",\"company\":\"JOHOKU MANUFACTURING PVT LTD\",\"year\":\"2021\"}",
+ "group_by_type": "Count",
+ "idx": 0,
+ "is_public": 0,
+ "is_standard": 1,
+ "modified": "2022-10-21 20:49:52.539898",
+ "modified_by": "Administrator",
+ "module": "Johoku",
+ "name": "Employee Addition",
+ "number_of_groups": 0,
+ "owner": "Administrator",
+ "report_name": "Employee Joining",
+ "roles": [],
+ "time_interval": "Yearly",
+ "timeseries": 0,
+ "timespan": "Last Year",
+ "type": "Bar",
+ "use_report_chart": 0,
+ "x_field": "department",
+ "y_axis": [
+  {
+   "color": "#ed6313",
+   "y_field": "status"
+  }
+ ]
+}

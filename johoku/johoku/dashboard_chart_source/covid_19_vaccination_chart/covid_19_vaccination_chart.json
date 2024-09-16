@@ -1,0 +1,13 @@
+{
+ "creation": "2022-12-08 10:34:22.414691",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart Source",
+ "idx": 0,
+ "modified": "2022-12-08 10:34:35.280004",
+ "modified_by": "Administrator",
+ "module": "Johoku",
+ "name": "Covid 19 Vaccination Chart",
+ "owner": "Administrator",
+ "source_name": "Covid 19 Vaccination Chart",
+ "timeseries": 1
+}

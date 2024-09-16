@@ -1,0 +1,36 @@
+{
+ "add_total_row": 1,
+ "columns": [],
+ "creation": "2023-07-05 17:33:49.863747",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letter_head": "Johoku",
+ "modified": "2023-07-05 17:47:07.909410",
+ "modified_by": "Administrator",
+ "module": "Johoku",
+ "name": "Manpower Count Against Grade",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Employee Grade",
+ "report_name": "Manpower Count Against Grade",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "HR User"
+  },
+  {
+   "role": "HR Manager"
+  },
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Employee Self Service"
+  }
+ ]
+}

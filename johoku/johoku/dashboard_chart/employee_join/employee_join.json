@@ -1,0 +1,33 @@
+{
+ "chart_name": "Employee Join",
+ "chart_type": "Report",
+ "creation": "2022-12-17 16:18:43.231924",
+ "custom_options": "{\"x_field\": \"department\", \"chart_type\": \"Bar\", \"y_axis_fields\": [{\"idx\": 1, \"__islocal\": true, \"name\": \"row 1\", \"y_field\": \"status\", \"color\": \"#855b5b\"}], \"y_fields\": [\"status\"], \"colors\": [\"#855b5b\"]}",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart",
+ "filters_json": "{}",
+ "group_by_type": "Count",
+ "idx": 0,
+ "is_public": 0,
+ "is_standard": 1,
+ "modified": "2022-12-17 16:18:43.231924",
+ "modified_by": "Administrator",
+ "module": "Johoku",
+ "name": "Employee Join",
+ "number_of_groups": 0,
+ "owner": "Administrator",
+ "report_name": "Employee Joining",
+ "roles": [],
+ "time_interval": "Yearly",
+ "timeseries": 0,
+ "timespan": "Last Year",
+ "type": "Bar",
+ "use_report_chart": 0,
+ "x_field": "department",
+ "y_axis": [
+  {
+   "color": "#855b5b",
+   "y_field": "status"
+  }
+ ]
+}

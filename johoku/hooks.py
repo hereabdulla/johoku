@@ -94,26 +94,34 @@ app_license = "MIT"
 # ---------------
 # Override standard doctype classes
 
-# override_doctype_class = {
-# 	"ToDo": "custom_app.overrides.CustomToDo"
-# }
+override_doctype_class = {
+	"Employee Checkin": "johoku.overrides.CustomEmployeeCheckin",
+	"Leave Application":"johoku.overrides.CustomLeaveApplication",
+	"Compensatory Leave Request": "johoku.overrides.CustomCompensatoryLeaveRequest",
+    "Leave Allocation":"johoku.overrides.CustomLeaveAllocation",
+}
 
 # Document Events
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-#	}
-# }
+doc_events = {
+    "Employee":{
+		"validate": "johoku.custom.inactive_employee"
+	},
+    # "Leave Application" :{
+    #     "validate": "johoku.custom.validate_leave_application"
+        
+	# },
+	# "Overtime Plan": {
+	# 	"on_submit": "johoku.johoku.doctype.overtime_plan.overtime_plan.create_overtime_list",
+	# },	
+}
 
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
+scheduler_events = {
 # 	"all": [
 # 		"johoku.tasks.all"
 # 	],
@@ -129,7 +137,19 @@ app_license = "MIT"
 # 	"monthly": [
 # 		"johoku.tasks.monthly"
 # 	],
-# }
+"cron":{
+		"*/7 * * * *" :[
+			'johoku.mark_attendance.push_punch'
+		],
+		"*/11 * * * *" :[
+			'johoku.mark_attendance.mark_att'
+		],
+		"30 00 * * *" :[
+			'johoku.mark_attendance.delete_urc_automatically'
+		]
+
+	}
+}
 
 # Testing
 # -------

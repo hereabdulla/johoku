@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "SS.####",
+ "autoname": "SC.####",
  "creation": "2022-08-18 18:52:00.403002",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -17,39 +17,43 @@
   "column_break_8",
   "attach",
   "column_break_10",
-  "upload",
   "amended_from"
  ],
  "fields": [
   {
    "fieldname": "department",
    "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Department",
-   "options": "Department"
+   "options": "Department",
+   "reqd": 1
   },
   {
    "fieldname": "from_date",
    "fieldtype": "Date",
-   "label": "From Date"
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "From Date",
+   "reqd": 1
   },
   {
    "fieldname": "to_date",
    "fieldtype": "Date",
-   "label": "To Date"
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "To Date",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_4",
    "fieldtype": "Column Break"
   },
   {
+   "depends_on": "eval:doc.to_date",
    "fieldname": "get_template",
    "fieldtype": "Button",
    "label": "Get Template"
-  },
-  {
-   "fieldname": "upload",
-   "fieldtype": "Button",
-   "label": "Upload"
   },
   {
    "fieldname": "amended_from",
@@ -73,8 +77,9 @@
    "fieldtype": "Column Break"
   },
   {
+   "depends_on": "eval:doc.to_date",
    "fieldname": "attach",
-   "fieldtype": "Button",
+   "fieldtype": "Attach",
    "label": "Attach"
   },
   {
@@ -85,7 +90,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2022-08-23 20:09:21.105453",
+ "modified": "2022-11-19 15:56:26.040348",
  "modified_by": "Administrator",
  "module": "Johoku",
  "name": "Shift Schedule",

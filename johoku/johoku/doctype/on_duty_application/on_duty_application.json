@@ -1,6 +1,5 @@
 {
  "actions": [],
- "allow_rename": 1,
  "autoname": "naming_series:",
  "creation": "2022-08-16 13:05:28.565821",
  "doctype": "DocType",
@@ -20,24 +19,25 @@
   "section_break_11",
   "od_date",
   "to_date",
-  "half_day",
-  "half_day_date",
+  "shift",
   "total_number_of_days",
   "session",
   "column_break_18",
+  "total_hourly",
   "from_time",
   "to_time",
+  "to",
   "vehicle_request",
   "section_break_22",
   "multi_employee",
   "section_break_24",
-  "address",
   "approver",
   "approver_name",
   "employee",
   "employee_name",
   "department",
   "data_31",
+  "address",
   "person_to_meet",
   "company_name",
   "description",
@@ -132,40 +132,17 @@
    "search_index": 1
   },
   {
-   "bold": 1,
-   "fieldname": "to_date",
-   "fieldtype": "Date",
-   "hidden": 1,
-   "in_list_view": 1,
-   "in_standard_filter": 1,
-   "label": "To Date",
-   "search_index": 1
-  },
-  {
-   "default": "0",
-   "fieldname": "half_day",
-   "fieldtype": "Check",
-   "hidden": 1,
-   "label": "Half Day"
-  },
-  {
-   "depends_on": "eval:doc.half_day && (doc.from_date != doc.to_date)",
-   "fieldname": "half_day_date",
-   "fieldtype": "Date",
-   "hidden": 1,
-   "label": "Half Day Date"
-  },
-  {
    "fieldname": "total_number_of_days",
    "fieldtype": "Data",
    "label": "Total Number of Days",
    "read_only": 1
   },
   {
+   "depends_on": "eval:doc.shift",
    "fieldname": "session",
    "fieldtype": "Select",
    "label": "Session",
-   "options": "\nFull Day\nFirst Half\nSecond Half",
+   "options": "\nFull Day\nFirst Half\nSecond Half\nHourly",
    "reqd": 1
   },
   {
@@ -173,19 +150,20 @@
    "fieldtype": "Column Break"
   },
   {
+   "depends_on": "eval:doc.session",
    "fieldname": "from_time",
    "fieldtype": "Time",
-   "label": "From TIme",
-   "reqd": 1
+   "label": "From TIme"
   },
   {
+   "depends_on": "eval:doc.session",
    "fieldname": "to_time",
    "fieldtype": "Time",
-   "label": "To TIme",
-   "reqd": 1
+   "label": "To TIme"
   },
   {
    "default": "0",
+   "depends_on": "eval:doc.session",
    "fieldname": "vehicle_request",
    "fieldtype": "Check",
    "label": "Vehicle Request"
@@ -195,11 +173,14 @@
    "fieldtype": "Section Break"
   },
   {
+   "depends_on": "eval:doc.session",
    "fieldname": "multi_employee",
    "fieldtype": "Table",
+   "label": "Employees",
    "options": "Multi Employee"
   },
   {
+   "depends_on": "eval:doc.session",
    "fieldname": "section_break_24",
    "fieldtype": "Section Break"
   },
@@ -226,10 +207,16 @@
    "fieldname": "employee",
    "fieldtype": "Link",
    "label": "Request By (Employee ID)",
-   "options": "Employee",
-   "read_only": 1
+   "options": "Employee"
   },
   {
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Requested By"
+  },
+  {
+   "fetch_from": "employee.department",
    "fieldname": "department",
    "fieldtype": "Link",
    "label": "Department",
@@ -261,8 +248,7 @@
    "collapsible": 1,
    "fieldname": "employee_details_section",
    "fieldtype": "Section Break",
-   "hidden": 1,
-   "label": "Employee Details"
+   "hidden": 1
   },
   {
    "fetch_from": "employee.grade",
@@ -343,17 +329,43 @@
    "read_only": 1
   },
   {
-   "fieldname": "employee_name",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Requested By",
+   "depends_on": "eval:doc.od_date",
+   "fieldname": "shift",
+   "fieldtype": "Link",
+   "label": "Shift",
+   "options": "Shift Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "To Date"
+  },
+  {
+   "depends_on": "eval:doc.session==\"Hourly\"",
+   "fieldname": "total_hourly",
+   "fieldtype": "Select",
+   "label": "Total Hourly",
+   "options": "\n1 Hour\n2 Hours\n3 Hours\n4 Hours"
+  },
+  {
+   "depends_on": "eval:doc.total_hourly",
+   "fieldname": "to",
+   "fieldtype": "Time",
+   "label": "To Time",
    "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
- "links": [],
- "modified": "2022-08-16 14:48:59.102262",
+ "links": [
+  {
+   "link_doctype": "Attendance",
+   "link_fieldname": "on_duty_application"
+  }
+ ],
+ "modified": "2024-08-10 12:20:35.053121",
  "modified_by": "Administrator",
  "module": "Johoku",
  "name": "On Duty Application",
@@ -376,5 +388,6 @@
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
+ "title_field": "employee_name",
  "track_changes": 1
 }
